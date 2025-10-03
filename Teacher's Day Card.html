@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://127.0.0.1:5500/first%20portfolio_files/teacher%20card.HTML -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Day Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+    }
+
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      width: 350px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(245, 158, 11, 0.1);
+      border-radius: 50%;
+      top: -120px;
+      left: -120px;
+    }
+
+    .card h1 {
+      font-size: 28px;
+      color: #f59e0b;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #242121;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    .line {
+      width: 80px;
+      height: 4px;
+      background: #f59e0b;
+      margin: 10px auto 20px;
+      border-radius: 2px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #f59e0b;
+      color: white;
+      border-radius: 25px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d97706;
+    }
+
+    .emoji {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    /*  Responsive  */
+    @media(max-width:600px) {
+        .card {
+            padding: 20px;
+        }
+        .card h1 {
+            font-size: 20px;
+        }
+        .card p {
+            font-size: 14px;
+        }
+        .emoji {
+            font-size: 30px;
+        }
+        .btn {
+            font-size: 13px;
+            padding: 10px 20px;
+        }
+    }
+    @media(max-width: 400px) {
+        .card h1 {
+            font-size: 18px;
+        }
+        .card p {
+            font-size: 13px;
+        }
+        .emoji {
+            font-size: 25px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">📚🎓👩‍🏫</div>
+    <h1>Happy Teacher's Day</h1>
+    <div class="line"></div>
+    <p>
+      <b>To the mentor who inspires,<br>
+      the guide who supports,<br>
+      and the teacher who cares.<br>
+      I am really thankful to god<br>
+      for blessing me with a teacher like you.<br> 
+      Thank you for everything! 🌸</b>
+    </p>
+    <a href="http://127.0.0.1:5500/first%20portfolio_files/teacher%20card.HTML#" class="btn">With Love 💖</a>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
